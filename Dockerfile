@@ -2,9 +2,9 @@
 FROM java:7-jre
 MAINTAINER Sean Nelson <audiohacked@gmail.com>
 
-ARG BASE_URL="http://ftb.cursecdn.com/FTB2/modpacks/direwolf20_17"
-ARG FTB_VERSION="1_9_0"
-ARG SERVER_FILE="direwolf20_17-server.zip"
+ENV BASE_URL="http://ftb.cursecdn.com/FTB2/modpacks/direwolf20_17"
+ENV FTB_VERSION="1_9_0"
+ENV SERVER_FILE="direwolf20_17-server.zip"
 ENV SERVER_PORT 25565
 
 WORKDIR /minecraft
