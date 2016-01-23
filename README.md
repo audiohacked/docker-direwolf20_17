@@ -6,7 +6,7 @@ docker pull audiohacked/direwolf20_17:1.9.0
 
 It's highly recommended run a data container:
 ```
-docker run --name direwolf20_datastore audiohacked/direwolf20_17:1.9.0
+docker run --name direwolf20_datastore audiohacked/direwolf20_17:1.9.0 true
 ```
 
 Then, run the server container:
