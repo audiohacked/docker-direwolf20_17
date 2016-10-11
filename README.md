@@ -11,7 +11,8 @@ docker run --name direwolf20_datastore audiohacked/direwolf20_17:1.9.0 true
 
 Then, run the server container:
 ```
-docker run -d --name direwolf20 \
+docker run --detach --interactive --tty \
+    --name direwolf20 \
     --volumes-from direwolf20_datastore \
     -p 25565:25565 \
     -e EULA=TRUE \
